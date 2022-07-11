@@ -36,3 +36,18 @@ bindkey "^[[F" end-of-line
 bindkey "^[[3~" delete-char
 bindkey "^[[1;3C" forward-word
 bindkey "^[[1;3D" backward-word
+
+# history
+#
+# The file where the history is stored
+export HISTFILE="$HOME/.zsh_history"
+# Number of events loaded into memory
+export HISTSIZE=10000
+
+# Number of events stored in the zsh history file
+export SAVEHIST=10000
+# Do not save duplicate commands to history
+setopt HIST_IGNORE_ALL_DUPS
+
+# Do not find duplicate command when searching
+setopt HIST_FIND_NO_DUPS
