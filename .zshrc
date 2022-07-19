@@ -9,9 +9,6 @@ source ~/powerlevel10k/powerlevel10k.zsh-theme
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-source ~/powerlevel10k/powerlevel10k.zsh-theme
-source ~/powerlevel10k/powerlevel10k.zsh-theme
-source ~/powerlevel10k/powerlevel10k.zsh-theme
 
 #Plugins
 
@@ -27,7 +24,6 @@ alias la='ls -a'
 alias lla='ls -la'
 alias lt='ls --tree'
 alias cat="bat"
-source ~/powerlevel10k/powerlevel10k.zsh-theme
 
 # Keys areglando inicio fin y suprimir | alt flecha
 
@@ -51,3 +47,7 @@ setopt HIST_IGNORE_ALL_DUPS
 
 # Do not find duplicate command when searching
 setopt HIST_FIND_NO_DUPS
+
+setopt complete_in_word
+autoload -U compinit
+
