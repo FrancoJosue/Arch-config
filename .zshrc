@@ -49,5 +49,7 @@ setopt HIST_IGNORE_ALL_DUPS
 setopt HIST_FIND_NO_DUPS
 
 setopt complete_in_word
-autoload -U compinit
+autoload -Uz compinit
+compinit
 
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
