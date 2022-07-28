@@ -8,9 +8,8 @@ set showcmd
 set ruler
 set encoding=utf-8
 set showmatch
-set relativenumber
 set laststatus=2
-
+set tabstop=4
 
 call plug#begin('~/.vim/plugged')
 
@@ -21,6 +20,7 @@ Plug 'junegunn/fzf.vim'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'mhinz/vim-signify'
 Plug 'yggdroot/indentline'
+Plug 'skanehira/docker-compose.vim'
 call plug#end()
 "IDE
 "Plug

@@ -53,3 +53,4 @@ autoload -Uz compinit
 compinit
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+source ~/powerlevel10k/powerlevel10k.zsh-theme
